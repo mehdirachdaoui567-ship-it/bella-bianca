@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bella Bianca — Services & Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">Bella Bianca</div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#nouveaux-modeles">Nouveau Modèles</a>
+        <a href="#contact" class="btn-primary">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Solutions simples pour votre activité</h1>
+          <p class="lead">Site rapide, portfolio élégant et bouton WhatsApp prêt à recevoir des commandes.</p>
+          <div class="hero-cta">
+            <a href="#portfolio" class="btn">Voir le portfolio</a>
+            <a href="#contact" class="btn btn-outline">Contact</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="placeholder1.jpg" alt="Placeholder" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container section">
+      <h2>Services</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Création de site</h3>
+          <p>Site vitrine simple, rapide et responsive — prêt pour GitHub Pages.</p>
+        </div>
+        <div class="card">
+          <h3>Portfolio & Galerie</h3>
+          <p>Mettez en valeur vos modèles avec une galerie filtrable et légère.</p>
+        </div>
+        <div class="card">
+          <h3>Commande via WhatsApp</h3>
+          <p>Les clients peuvent commander directement via WhatsApp avec message pré-rempli.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="container section">
+      <h2>Portfolio</h2>
+      <div class="grid-4 gallery">
+        <img src="placeholder2.jpg" alt="p1">
+        <img src="placeholder3.jpg" alt="p2">
+        <img src="placeholder4.jpg" alt="p3">
+        <img src="placeholder5.jpg" alt="p4">
+      </div>
+    </section>
+
+    <!-- Nouveau Modèles (filtered gallery) -->
+    <section id="nouveaux-modeles" class="container section">
+      <h2>Nouveau Modèles</h2>
+      <div class="button-bar">
+        <button class="filter-btn active" data-filter="all">All models</button>
+        <button class="filter-btn" data-filter="new">Nouveaux</button>
+        <button class="filter-btn" data-filter="traditional">Traditionnels</button>
+        <a class="btn-primary" id="order-now" href="#">Commander</a>
+      </div>
+
+      <div class="filtered-gallery">
+        <!-- replace filenames with model1..model15 or real names you upload -->
+        <img src="model1.jpg" data-category="new" alt="m1">
+        <img src="model2.jpg" data-category="traditional" alt="m2">
+        <img src="model3.jpg" data-category="new" alt="m3">
+        <img src="model4.jpg" data-category="traditional" alt="m4">
+        <img src="model5.jpg" data-category="new" alt="m5">
+        <img src="model6.jpg" data-category="traditional" alt="m6">
+        <img src="model7.jpg" data-category="new" alt="m7">
+        <img src="model8.jpg" data-category="traditional" alt="m8">
+        <img src="model9.jpg" data-category="new" alt="m9">
+        <img src="model10.jpg" data-category="traditional" alt="m10">
+        <img src="model11.jpg" data-category="new" alt="m11">
+        <img src="model12.jpg" data-category="traditional" alt="m12">
+        <img src="model13.jpg" data-category="new" alt="m13">
+        <img src="model14.jpg" data-category="traditional" alt="m14">
+        <img src="model15.jpg" data-category="new" alt="m15">
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <p>Pour commander ou demander un devis, contactez via WhatsApp:</p>
+      <a id="whatsapp-link" class="btn-primary" href="#">Envoyer un message</a>
+      <div class="note">Numéro de contact: <strong>+212 721 508 674</strong></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>Bella Bianca © <span id="year"></span></div>
+      <div>Made with care • Simple deploy on GitHub Pages</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
